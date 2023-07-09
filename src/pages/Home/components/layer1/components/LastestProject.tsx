@@ -2,9 +2,9 @@ import RecursosWebPhone from "../../../../../assets/LastestProjects/RecursosWebP
 
 export default function LastestProject() {
   return (
-    <div className="col-span-2 row-span-2 bg-[#00CC99] rounded-xl flex">
-      <div className="w-1/2 flex flex-col justify-around items-center">
-        <div className="flex flex-col items-start justify-center gap-2 px-5">
+    <div className="relative overflow-hidden col-span-2 row-span-2 bg-[#00CC99] rounded-xl flex">
+      <div className="w-1/2 flex flex-col justify-around items-center px-6">
+        <div className="flex flex-col items-start justify-center gap-4 px-5">
           <div className="text-white bg-black py-1 px-4 rounded-xl font-bold">
             Más nuevo
           </div>
@@ -16,14 +16,13 @@ export default function LastestProject() {
             momento. Desde iconos y backgrounds, hasta paletas de colores e
             inspiración para tus diseños.
           </p>
+        <button className="text-black bg-white py-1 px-4 rounded-xl font-bold">Visitar</button>
         </div>
         <div>
-        <button className="text-black bg-white py-1 px-4 rounded-xl font-bold">Visitar</button>
-
         </div>
       </div>
       <div className="w-1/2">
-        <img src={RecursosWebPhone} className="w-52"/>
+        <img src={RecursosWebPhone} className="absolute w-56 mb-4 -bottom-36"/>
       </div>
     </div>
   );

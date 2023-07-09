@@ -2,9 +2,9 @@ import tecnologies from "../../../../../utils/tecnologies";
 
 export default function TechCard () {
     return (
-        <div className="col-span-1 row-span-2 bg-[#242424] rounded-xl">
+        <div className="relative overflow-hidden col-span-1 row-span-2 bg-[#242424] rounded-xl">
             <div className="h-2/3">
-            <img src={tecnologies[0].image}/>
+            <img src={tecnologies[0].image} className="absolute invert w-[100%] -left-16 -top-4"/>
             </div>
             <div className="h-1/3 flex flex-col justify-around items-center">
                 <p className="font-extrabold text-4xl text-white">{tecnologies[0].name}</p>
