@@ -9,14 +9,14 @@ import Testimonials from "./components/Testimonials";
 
 export default function Layer1() {
   return (
-    <main className="w-[100%] h-[220vh] grid grid-cols-4 gap-5">
+    <main className="w-[100%] grid grid-cols-4 gap-5">
       <TechCard />
       <LastestPub />
       <About />
       <Socials />
       <LastestProject />
       <Testimonials />
-      <Layer2 />
+      <Project />
     </main>
   );
 }
