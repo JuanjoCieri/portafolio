@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <div className="col-span-2 bg-white rounded-xl flex flex-col justify-center items-start px-6 py-8 gap-3">
+    <div className="col-span-4 tablet: laptop: desktop:col-span-2 bg-white rounded-xl flex flex-col justify-center items-start px-6 py-8 gap-3">
       <div>
         <h4 className="text-xl font-bold ">Testimonios</h4>
       </div>

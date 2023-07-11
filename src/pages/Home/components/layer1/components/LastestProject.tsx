@@ -2,11 +2,11 @@ import RecursosWebPhone from "../../../../../assets/LastestProjects/RecursosWebP
 
 export default function LastestProject() {
   return (
-    <div className="relative overflow-hidden col-span-2 row-span-2 bg-[#00CC99] rounded-xl flex">
+    <div className="relative overflow-hidden col-span-4 tablet:col-span-4 laptop:col-span-4 desktop:col-span-2 row-span-2 bg-[#00CC99] rounded-xl flex py-10 h-[70vh]">
       <div className="w-1/2 flex flex-col justify-around items-center px-6">
         <div className="flex flex-col items-start justify-center gap-4 px-5">
           <div className="text-white bg-black py-1 px-3 rounded-xl font-semibold">
-            Más nuevo
+            Último
           </div>
           <span className="text-black font-bold text-3xl">
             Recursos Web <br/> Gratuitos

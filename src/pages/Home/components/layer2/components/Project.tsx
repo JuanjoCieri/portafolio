@@ -2,7 +2,7 @@ export default function Project() {
   return (
     <>
       <div
-        className={`h-[100vh] col-span-4 row-span-2 bg-red-400 rounded-xl flex bg-[url('/src/pages/Home/components/layer2/components/ShinyOverlay.png')]`}
+        className={`h-[100vh] col-span-4 row-span-2 rounded-xl flex bg-[url('/src/pages/Home/components/layer2/components/ShinyOverlay.png')] bg-cover`}
       >
         <div className="w-1/3 flex justify-center items-center">
           <div className="flex flex-col items-start justify-center gap-3 px-10">

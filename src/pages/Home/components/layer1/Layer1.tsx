@@ -1,5 +1,9 @@
 import Layer2 from "../layer2/Layer2";
+import PageSpeed from "../layer2/components/PageSpeed";
 import Project from "../layer2/components/Project";
+import Project2 from "../layer2/components/Project2";
+import Project3 from "../layer2/components/Project3";
+import Project4 from "../layer2/components/Project4";
 import About from "./components/About";
 import LastestProject from "./components/LastestProject";
 import LastestPub from "./components/LastestPub";
@@ -9,7 +13,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function Layer1() {
   return (
-    <main className="w-[100%] grid grid-cols-4 gap-5">
+    <main className="w-[100%] grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 desktop:grid-cols-4 gap-5">
       <TechCard />
       <LastestPub />
       <About />
@@ -17,6 +21,10 @@ export default function Layer1() {
       <LastestProject />
       <Testimonials />
       <Project />
+      <Project2 />
+      <PageSpeed />
+      <Project4 />
+      <Project3 />
     </main>
   );
 }
