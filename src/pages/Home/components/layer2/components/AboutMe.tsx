@@ -4,7 +4,7 @@ export default function AboutMe() {
       <div className="pr-0 tablet:pr-10 laptop:pr-24 desktop:pr-24 flex flex-col gap-3">
         <h3 className="font-bold text-5xl">Sobre mí</h3>
         <p>
-          Hola!, soy Juan José Cieri, Desarrollador Full-Stack con
+          Desarrollador Full-Stack con
           orientación en Front-End.
         </p>
         <p>

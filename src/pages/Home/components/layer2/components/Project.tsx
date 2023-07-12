@@ -24,8 +24,8 @@ export default function Project() {
           </div>
         </div>
         <div className="w-full tablet:w-full laptop:w-2/3 desktop:w-2/3 flex justify-center items-center">
-          <img src={desktopMockup} className="w-[90%] tablet:w-[60%] laptop:w-[80%] desktop:w-[80%]" />
-          <img src={tabletMockup} className="w-[25%] tablet:w-[15%] laptop:w-[15%] desktop:w-[15%] absolute ml-[55%] tablet:ml-[40%] laptop:ml-[40%] desktop:ml-[40%]" />
+          <img src={desktopMockup} alt="Imagen Mockup en Desktop del proyecto Recursos Web creado por Juan Cieri" className="w-[90%] tablet:w-[60%] laptop:w-[80%] desktop:w-[80%]" />
+          <img src={tabletMockup} alt="Imagen Mockup en Tablet del proyecto Recursos Web creado por Juan Cieri" className="w-[25%] tablet:w-[15%] laptop:w-[15%] desktop:w-[15%] absolute ml-[55%] tablet:ml-[40%] laptop:ml-[40%] desktop:ml-[40%]" />
         </div>
       </div>
     </>

@@ -10,9 +10,7 @@ export default function Footer() {
       </div>
       <div className="flex items-center justify-center gap-10">
         <LinkedinIcon />
-        <a href="">
-          <GithubIcon />
-        </a>
+        <GithubIcon />
         <a href="mailto:juin@hotmail.com.ar?subject = Acordar una reunion&body = Message">
           <svg
             fill="black"

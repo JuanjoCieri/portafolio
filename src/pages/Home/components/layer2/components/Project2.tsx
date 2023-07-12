@@ -1,4 +1,6 @@
 import DesktopMockup from "../../../../../assets/Project-HappyTails/DesktopMockup.png";
+import IntersectionObserver from "../../../../../utils/IntersectionObserver";
+import { motion } from "framer-motion";
 import { LinkIcon } from "../../../../../utils/icons";
 
 export default function Project2() {
@@ -28,7 +30,20 @@ export default function Project2() {
         </div>
       </div>
       <div className="h-1/2 flex justify-center items-center">
-        <img src={DesktopMockup} className="w-[450px]" />
+        <IntersectionObserver>
+          {(isVisible) => (
+            <motion.img
+              initial={{ x: "100%", opacity: 0 }}
+              animate={
+                isVisible ? { x: 0, opacity: 1 } : { x: "100%", opacity: 0 }
+              }
+              transition={{ duration: 1, delay: 1 }}
+              src={DesktopMockup}
+              alt="Imagen Mockup en Desktop del proyecto llamado HappyTails de Juan Cieri"
+              className="w-[450px]"
+            />
+          )}
+        </IntersectionObserver>
       </div>
     </div>
   );

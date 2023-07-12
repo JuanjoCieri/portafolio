@@ -19,9 +19,9 @@ export default function TechCard() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "25%", background: "white" },
+    from: { size: "30%", background: "white" },
     to: {
-      size: open ? "100%" : "25%",
+      size: open ? "100%" :  "30%",
       background: open ? "#242424" : "white",
     },
   });
@@ -49,13 +49,14 @@ export default function TechCard() {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="col-span-4 tablet:col-span-4 laptop:col-span-1 desktop:col-span-1 row-span-2 bg-[#242424] rounded-xl h-[50vh] tablet:h-[50vh] laptop:h-auto desktop:h-auto"
+      className="col-span-4 tablet:col-span-4 laptop:col-span-2 desktop:col-span-1 row-span-2 bg-[#242424] rounded-xl h-[50vh] tablet:h-[50vh] laptop:h-auto desktop:h-auto"
     >
       {!open ? (
-        <div className="h-2/3 flex justify-center items-center">
+        <div className="h-1/2 flex justify-center items-center">
           <img
             src={data[0].image}
-            className="invert w-[30%] tablet:w-[30%] laptop:w-[60%] desktop:w-[60%]"
+            alt={`Imagen del logotipo de la tecnología ${data[0].name}`}
+            className="invert w-[30%] tablet:w-[20%] laptop:w-[40%] desktop:w-[60%]"
           />
         </div>
       ) : (
@@ -65,7 +66,7 @@ export default function TechCard() {
         className={
           open
             ? "h-full flex flex-col justify-around items-center"
-            : "h-1/3 flex flex-col justify-around gap-5 items-center"
+            : "h-1/2 flex flex-col justify-around gap-5 items-center"
         }
       >
         {!open ? (
@@ -91,7 +92,7 @@ export default function TechCard() {
               <p>{item.name}</p>
             </animated.div>
           ))}
-          {!open ? <p>Ver Stack</p> : false}
+          {!open ? <p className="cursor-pointer">Ver Stack</p> : false}
         </animated.div>
       </div>
     </motion.div>

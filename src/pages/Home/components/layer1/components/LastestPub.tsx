@@ -15,6 +15,7 @@ export default function LastestPub() {
     >
       <img
         src={lastestPub}
+        alt="Imagen del último proyecto realizado por Juan Cieri llamado Cierusic"
         className="w-[100%] h-[100%] object-cover brightness-[0.30] rounded-xl"
       />
       <div className="absolute flex flex-col gap-2 py-5 px-6 tablet:px-10 tablet:py-10 laptop:px-10 laptop:py-10 desktop:py-10 desktop:px-10">
@@ -23,7 +24,7 @@ export default function LastestPub() {
             Linkedin
           </span>
         </div>
-        <div className="w-[70%]">
+        <div className="w-[70%] tablet:w-[70%] laptop:w-[100%] desktop:w-[100%]">
           <p className="text-white font-semibold">
             “Hola! como están?, hoy les quiero mostrar <br /> un nuevo proyecto
             en el cual vengo trabajando...”
