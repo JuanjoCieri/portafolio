@@ -6,7 +6,7 @@ export default function Project() {
   return (
     <>
       <div
-        className={`h-[100vh] col-span-4 row-span-2 rounded-xl flex flex-col tablet:flex-col laptop:flex-row desktop:flex-row bg-[url('/src/pages/Home/components/layer2/components/ShinyOverlay1.png')] bg-cover`}
+        className={`h-[100vh] col-span-4 row-span-2 rounded-xl flex flex-col tablet:flex-col laptop:flex-row desktop:flex-row bg-[url('/src/assets/ShinyOverlay1.png')] bg-cover`}
       >
         <div className="w-full tablet:w-full laptop:w-1/3 desktop:w-1/3 flex justify-center items-center">
           <div className="flex flex-col items-start justify-center gap-3 py-10 px-10 tablet:px-10 tablet:py-10 laptop:px-10 laptop:py-0 desktop:px-10 desktop:py-0">
