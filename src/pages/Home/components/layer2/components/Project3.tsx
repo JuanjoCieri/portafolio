@@ -1,4 +1,4 @@
-import DesktopMockup from "../../../../../assets/Project-HappyTails/DesktopMockup.png";
+import DesktopMockup from "../../../../../assets/Project-NoBgApp/DesktopFront.png";
 import { LinkIcon } from "../../../../../utils/icons";
 
 export default function Project3() {
