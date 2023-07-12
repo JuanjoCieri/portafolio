@@ -1,8 +1,18 @@
 import lastestPub from "../../../../../assets/LastestPub/LastestPub.jpeg";
 import { LinkIcon } from "../../../../../utils/icons";
+import { motion } from "framer-motion";
 export default function LastestPub() {
   return (
-    <div className="col-span-4 tablet:col-span-2 laptop:col-span-2 desktop:col-span-2 h-[50vh] row-span-1 rounded-xl flex justify-start items-end">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.7,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className="col-span-4 tablet:col-span-4 laptop:col-span-2 desktop:col-span-2 h-[50vh] row-span-1 rounded-xl flex justify-start items-end"
+    >
       <img
         src={lastestPub}
         className="w-[100%] h-[100%] object-cover brightness-[0.30] rounded-xl"
@@ -13,16 +23,22 @@ export default function LastestPub() {
             Linkedin
           </span>
         </div>
-        <div>
+        <div className="w-[70%]">
           <p className="text-white font-semibold">
             “Hola! como están?, hoy les quiero mostrar <br /> un nuevo proyecto
             en el cual vengo trabajando...”
           </p>
         </div>
         <div>
-          <LinkIcon />
+          <a
+            href="https://www.linkedin.com/posts/juan-jose-cieri_hola-como-est%C3%A1n-hoy-les-quiero-mostrar-activity-7081967368326774784-EiYz?utm_source=share&utm_medium=member_desktop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

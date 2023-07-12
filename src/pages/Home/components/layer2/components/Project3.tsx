@@ -14,11 +14,15 @@ export default function Project3() {
             La Aplicación utiliza la Inteligencia
             Artificial <br/> de Cloudinary para borrar automáticamente <br/> el fondo de las
             imágenes en segundos y con <br/> la mejor calidad. "Resalta lo importante, <br/>
-            elimina lo innecesario.""
+            elimina lo innecesario."
           </p>
         </div>
         <div>
-          <a href="https://happytails.vercel.app/">
+        <a
+            href="https://no-bg-app.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkIcon />
           </a>
         </div>

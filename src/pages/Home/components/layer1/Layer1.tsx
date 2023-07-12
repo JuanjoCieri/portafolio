@@ -1,4 +1,6 @@
 import Layer2 from "../layer2/Layer2";
+import AboutMe from "../layer2/components/AboutMe";
+import Footer from "../layer2/components/Footer";
 import PageSpeed from "../layer2/components/PageSpeed";
 import Project from "../layer2/components/Project";
 import Project2 from "../layer2/components/Project2";
@@ -25,6 +27,8 @@ export default function Layer1() {
       <PageSpeed />
       <Project4 />
       <Project3 />
+      <AboutMe />
+      <Footer />
     </main>
   );
 }

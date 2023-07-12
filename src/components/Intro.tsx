@@ -8,7 +8,7 @@ export default function Intro() {
       opacity: 1,
       transition: {
         delay: 0.5,
-        staggerChildren: 0.15,
+        staggerChildren: 0.05,
       },
     },
   };
@@ -21,12 +21,13 @@ export default function Intro() {
   const text = "Juan José Cieri";
 
   return (
-    <section className="w-[100vh] h-[100vh] flex justify-center items-center">
+      <>
+    <motion.section className="relative w-[100%] h-[100vh] flex justify-center items-center bg-black">
       <motion.p
         initial="hidden"
         animate="visible"
         variants={textVariants}
-        className="text-4xl font-bold"
+        className="text-4xl font-bold text-white"
       >
         {text.split("").map((letter, index) => (
           <motion.span key={index} variants={letterVariants}>
@@ -34,6 +35,7 @@ export default function Intro() {
           </motion.span>
         ))}
       </motion.p>
-    </section>
+    </motion.section>
+    </>
   );
 }

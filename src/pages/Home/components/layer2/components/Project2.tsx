@@ -11,13 +11,18 @@ export default function Project2() {
           </div>
           <span className="text-white font-bold text-4xl">HappyTails</span>
           <p className="font-medium text-gray-100 text-sm">
-            HappyTails es una Red Social con el objetivo de <br/> facilitar la
-            adopción de animales. <br/> Cuenta con chat en línea, marketplace,
-            notificaciones, <br/> mailing, pasarela de pago, entre otras funcionalidades.
+            HappyTails es una Red Social con el objetivo de <br /> facilitar la
+            adopción de animales. <br /> Cuenta con chat en línea, marketplace,
+            notificaciones, <br /> mailing, pasarela de pago, entre otras
+            funcionalidades.
           </p>
         </div>
         <div>
-          <a href="https://happytails.vercel.app/">
+          <a
+            href="https://happytails.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkIcon />
           </a>
         </div>

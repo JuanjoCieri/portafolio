@@ -10,6 +10,7 @@ import {
 import data from "../../../../../utils/tecnologies";
 import { useState } from "react";
 import styles from "./styles.module.css";
+import { motion } from "framer-motion";
 
 export default function TechCard() {
   const [open, set] = useState(false);
@@ -40,10 +41,22 @@ export default function TechCard() {
   ]);
 
   return (
-    <div className="col-span-4 tablet:col-span-2 laptop:col-span-1 desktop:col-span-1 row-span-2 h-[80vh] bg-[#242424] rounded-xl">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className="col-span-4 tablet:col-span-4 laptop:col-span-1 desktop:col-span-1 row-span-2 bg-[#242424] rounded-xl h-[50vh] tablet:h-[50vh] laptop:h-auto desktop:h-auto"
+    >
       {!open ? (
         <div className="h-2/3 flex justify-center items-center">
-          <img src={data[0].image} className="invert w-[40%] tablet:w-[40%] laptop:w-[60%] desktop:w-[60%]" />
+          <img
+            src={data[0].image}
+            className="invert w-[30%] tablet:w-[30%] laptop:w-[60%] desktop:w-[60%]"
+          />
         </div>
       ) : (
         <></>
@@ -52,7 +65,7 @@ export default function TechCard() {
         className={
           open
             ? "h-full flex flex-col justify-around items-center"
-            : "h-1/3 flex flex-col justify-around items-center"
+            : "h-1/3 flex flex-col justify-around gap-5 items-center"
         }
       >
         {!open ? (
@@ -81,6 +94,6 @@ export default function TechCard() {
           {!open ? <p>Ver Stack</p> : false}
         </animated.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

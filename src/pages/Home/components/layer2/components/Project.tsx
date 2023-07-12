@@ -1,11 +1,15 @@
+import desktopMockup from "../../../../../assets/LastestProjects/RecursosWebDesktop.png"
+import tabletMockup from "../../../../../assets/LastestProjects/RecursosWebTablet.png"
+
+
 export default function Project() {
   return (
     <>
       <div
-        className={`h-[100vh] col-span-4 row-span-2 rounded-xl flex bg-[url('/src/pages/Home/components/layer2/components/ShinyOverlay.png')] bg-cover`}
+        className={`h-[100vh] col-span-4 row-span-2 rounded-xl flex flex-col tablet:flex-col laptop:flex-row desktop:flex-row bg-[url('/src/pages/Home/components/layer2/components/ShinyOverlay1.png')] bg-cover`}
       >
-        <div className="w-1/3 flex justify-center items-center">
-          <div className="flex flex-col items-start justify-center gap-3 px-10">
+        <div className="w-full tablet:w-full laptop:w-1/3 desktop:w-1/3 flex justify-center items-center">
+          <div className="flex flex-col items-start justify-center gap-3 py-10 px-10 tablet:px-10 tablet:py-10 laptop:px-10 laptop:py-0 desktop:px-10 desktop:py-0">
             <div className="text-white text-sm bg-black py-1 px-3 rounded-lg font-semibold">
               Personal
             </div>
@@ -19,10 +23,10 @@ export default function Project() {
             </p>
           </div>
         </div>
-        {/* <div className="w-2/3 flex justify-start items-center">
-          <img src={desktopMockup} className="w-[700px]" />
-          <img src={tabletMockup} className="w-[240px]" />
-        </div> */}
+        <div className="w-full tablet:w-full laptop:w-2/3 desktop:w-2/3 flex justify-center items-center">
+          <img src={desktopMockup} className="w-[90%] tablet:w-[60%] laptop:w-[80%] desktop:w-[80%]" />
+          <img src={tabletMockup} className="w-[25%] tablet:w-[15%] laptop:w-[15%] desktop:w-[15%] absolute ml-[55%] tablet:ml-[40%] laptop:ml-[40%] desktop:ml-[40%]" />
+        </div>
       </div>
     </>
   );

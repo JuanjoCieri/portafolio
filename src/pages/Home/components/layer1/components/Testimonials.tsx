@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Testimonials() {
   return (
-    <div className="col-span-4 tablet: laptop: desktop:col-span-2 bg-white rounded-xl flex flex-col justify-center items-start px-6 py-8 gap-3">
+    <motion.div initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{
+      duration: 0.8,
+      delay: 1.5,
+      ease: [0, 0.71, 0.2, 1.01],
+    }} className="col-span-4 tablet: laptop: desktop:col-span-2 bg-white rounded-xl flex flex-col justify-center items-start px-6 py-8 gap-3">
       <div>
         <h4 className="text-xl font-bold ">Testimonios</h4>
       </div>
@@ -10,6 +18,6 @@ export default function Testimonials() {
       <div>
         <p className="font-medium text-sm">Christian Gabriel Ferreiro - Full Stack Developer</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
