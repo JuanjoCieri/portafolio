@@ -1,4 +1,3 @@
-import Layer2 from "../layer2/Layer2";
 import AboutMe from "../layer2/components/AboutMe";
 import Footer from "../layer2/components/Footer";
 import PageSpeed from "../layer2/components/PageSpeed";
