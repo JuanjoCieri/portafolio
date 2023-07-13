@@ -21,6 +21,15 @@ export default function Project() {
               momento. Desde iconos y backgrounds, hasta paletas de colores e
               inspiración para tus diseños.
             </p>
+            <a
+            href="https://recursos-web-ten.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="text-black bg-white py-1 px-4 rounded-xl font-bold">
+              Visitar
+            </button>
+          </a>
           </div>
         </div>
         <div className="w-full tablet:w-full laptop:w-2/3 desktop:w-2/3 flex justify-center items-center">

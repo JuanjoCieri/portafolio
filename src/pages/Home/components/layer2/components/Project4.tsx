@@ -21,6 +21,15 @@ export default function Project4() {
               Proporciona una experiencia interactiva y agradable para los
               amantes de la música.
             </p>
+            <a
+            href="https://cierusic.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="text-black bg-white py-1 px-4 rounded-xl font-bold">
+              Visitar
+            </button>
+          </a>
           </div>
         </div>
         <div className="w-full tablet:w-full laptop:w-2/3 desktop:w-2/3 flex justify-center items-center">
