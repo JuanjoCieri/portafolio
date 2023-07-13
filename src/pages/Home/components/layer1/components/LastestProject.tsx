@@ -45,7 +45,7 @@ export default function LastestProject() {
             <motion.img
               initial={{ y: 300 }}
               animate={isVisible ? { y: 0 } : { y: 300 }}
-              transition={{ duration: 1.5, type: "spring", delay: 1 }}
+              transition={{ duration: 1.5, type: "spring", delay: 1.5 }}
               src={RecursosWebPhone}
               alt="Imagen del proyecto Recursos Web creado por Juan Cieri"
               className="absolute w-56 mb-4 -bottom-36"

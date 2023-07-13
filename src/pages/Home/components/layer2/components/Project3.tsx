@@ -11,14 +11,15 @@ export default function Project3() {
           </div>
           <span className="text-black font-bold text-4xl">No Bg App</span>
           <p className="font-medium text-gray-900 text-sm">
-            La Aplicación utiliza la Inteligencia
-            Artificial <br/> de Cloudinary para borrar automáticamente <br/> el fondo de las
-            imágenes en segundos y con <br/> la mejor calidad. "Resalta lo importante, <br/>
+            La Aplicación utiliza la Inteligencia Artificial <br /> de
+            Cloudinary para borrar automáticamente <br /> el fondo de las
+            imágenes en segundos y con <br /> la mejor calidad. "Resalta lo
+            importante, <br />
             elimina lo innecesario."
           </p>
         </div>
         <div>
-        <a
+          <a
             href="https://no-bg-app.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,7 +29,11 @@ export default function Project3() {
         </div>
       </div>
       <div className="h-1/2 flex justify-center items-center">
-        <img src={DesktopMockup} alt="Imagen Mockup en Desktop del proyecto No Bg App (No Background App) creado por Juan Cieri" className="w-[450px]" />
+        <img
+          src={DesktopMockup}
+          alt="Imagen Mockup en Desktop del proyecto No Bg App (No Background App) creado por Juan Cieri"
+          className="w-[60%]"
+        />
       </div>
     </div>
   );

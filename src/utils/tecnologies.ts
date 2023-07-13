@@ -3,6 +3,7 @@ import JavascriptIcon from "../assets/TechIcons/JavascriptIcon.png"
 import TypescriptIcon from "../assets/TechIcons/TypescriptIcon.png"
 import NodeJSICon from "../assets/TechIcons/NodeJSIcon.svg"
 import ExpressIcon from "../assets/TechIcons/ExpressIcon.png"
+import MySQLIcon from "../assets/TechIcons/MySQLICon.png"
 
 export default [
     {
@@ -41,10 +42,10 @@ export default [
         height: 400,
     },
     {
-        name: 'React',
+        name: 'MySQL',
         description: '#5ee7df → #b490ca',
         css: 'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)',
-        image: ReactIcon,
+        image: MySQLIcon,
         height: 400,
     },
 ]
