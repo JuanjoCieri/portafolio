@@ -5,6 +5,7 @@ import Project from "../layer2/components/Project";
 import Project2 from "../layer2/components/Project2";
 import Project3 from "../layer2/components/Project3";
 import Project4 from "../layer2/components/Project4";
+import Project5 from "../layer2/components/Project5";
 import About from "./components/About";
 import LastestProject from "./components/LastestProject";
 import LastestPub from "./components/LastestPub";
@@ -22,6 +23,7 @@ export default function Layer1() {
       <LastestProject />
       <Testimonials />
       <Project />
+      <Project5 />
       <Project2 />
       <PageSpeed />
       <Project4 />
