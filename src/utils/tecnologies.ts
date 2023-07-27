@@ -3,7 +3,7 @@ import JavascriptIcon from "../assets/TechIcons/JavascriptIcon.png"
 import TypescriptIcon from "../assets/TechIcons/TypescriptIcon.png"
 import NodeJSICon from "../assets/TechIcons/NodeJSIcon.svg"
 import ExpressIcon from "../assets/TechIcons/ExpressIcon.png"
-import MySQLIcon from "../assets/TechIcons/MySQLICon.png"
+import MySQLIcon from "../assets/TechIcons/MySQLIcon.png"
 
 export default [
     {
